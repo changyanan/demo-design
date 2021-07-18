@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>demo-design</artifactId>
+    <artifactId>factory</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-design</name>
+    <name>factory</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
@@ -21,30 +21,24 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.62</version>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
     </dependencies>
-	<repositories>
-			<repository>
-				<id>globalegrow-maven</id>
-				<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-				<snapshots>
-					<enabled>true</enabled>
-					<updatePolicy>always</updatePolicy>
-				</snapshots>
-				<releases>
-					<enabled>true</enabled>
-				</releases>
-			</repository>
-		</repositories>
+
     <build>
         <plugins>
             <plugin>
